@@ -1,5 +1,9 @@
 const testVar = {}
 
-function testFunc() {
-  return "hi"
+
+function superbowlWin(year) {
+  let winningYear = year.find(function(s) {
+    return s.result === "W"
+  })
+  return !!winningYear ? winningYear.year : undefined
 }
